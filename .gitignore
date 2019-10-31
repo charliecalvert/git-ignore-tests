@@ -1,10 +1,13 @@
 # IDE
 .idea
 .vscode
+.c9
 Week06-FirebaseStarter/public/
 
 # Webpack
 .firebase
+bundle.js
+*.js.map
 
 # Logs
 logs
