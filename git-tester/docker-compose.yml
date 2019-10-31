@@ -1,0 +1,26 @@
+version: '3'
+services:
+  main:
+    build: main
+    ports:
+      - "30025:30025"
+    restart: always
+    command: npm start
+    links:
+      - route-tester
+  route-tester:
+    build: route-tester
+    ports:
+      - "30029:30029"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    command: npm start
+  system-environment:
+    build: system-environment
+    ports:
+      - "30028:30028"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    command: npm start

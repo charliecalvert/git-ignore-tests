@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+cp ~/.ssh/midterm-key system-environment/.
+docker-compose up $1
+rm system-environment/midterm-key
