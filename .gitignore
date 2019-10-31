@@ -1,6 +1,7 @@
 # IDE
 .idea
 .vscode
+.c9
 Week06-FirebaseStarter/public/
 
 # Webpack
