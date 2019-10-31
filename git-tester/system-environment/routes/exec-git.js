@@ -17,7 +17,7 @@ async function getBranches(response) {
         response.send({
             result: 'success',
             response: output,
-            asArray: allBranches
+            branches: allBranches
         });
     } else {
         return allBranches;

@@ -34,7 +34,7 @@ export default class App extends React.Component {
             let response = await fetch('/system-environment/getBranches');
             let result = await response.json();
             console.log(result);
-            this.setState({ branches: result.asArray });
+            this.setState({ branches: result.branches });
         } catch (ex) {
             alert(ex);
         }
