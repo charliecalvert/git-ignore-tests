@@ -22,4 +22,8 @@ router.get('/route-tester/you-rang', function(req, res) {
     requester('http://route-tester:30029/you-rang').pipe(res);
 });
 
+router.get('/:id', function(req, res) {
+    res.redirect('/');
+});
+
 module.exports = router;
