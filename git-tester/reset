@@ -1,7 +1,0 @@
-#! /usr/bin/env bash
-
-docker-compose down
-
-#docker container stop week04-docker-composer_main_1
-#docker container rm week04-docker-composer_main_1
-#docker image rm week04-docker-composer_main:latest
