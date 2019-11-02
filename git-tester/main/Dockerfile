@@ -4,6 +4,7 @@ WORKDIR /usr/src/elf-main
 COPY package.json /usr/src/elf-main/
 RUN npm install
 COPY . /usr/src/elf-main
+RUN echo "alias ll='ls -laF'" >> ~/.bashrc
 EXPOSE 30025
 RUN node_modules/.bin/webpack
 CMD [ "npm", "start" ]

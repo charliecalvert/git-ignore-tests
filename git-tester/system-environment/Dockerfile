@@ -7,8 +7,9 @@ COPY . /usr/src/system-environment
 RUN mkdir /root/.ssh
 RUN chmod 700 /root/.ssh
 RUN ssh-keyscan github.com >> ~/.ssh/known_hosts
-RUN ssh-agent bash -c 'ssh-add midterm-key; git clone git@github.com:charliecalvert/git-ignore-tests.git'
-RUN rm midterm-key
+# RUN ssh-agent bash -c 'ssh-add midterm-key; git clone git@github.com:charliecalvert/git-ignore-tests.git'
+# RUN rm midterm-key
+RUN echo "alias ll='ls -laF'" >> ~/.bashrc
 EXPOSE 30028
 RUN node_modules/.bin/webpack
 CMD [ "npm", "start" ]

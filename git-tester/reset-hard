@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+docker image rm git-tester_system-environment
+docker image rm git-tester_route-tester
+docker image rm git-tester_main

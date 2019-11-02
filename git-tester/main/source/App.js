@@ -43,7 +43,7 @@ export default class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Main Calvert</h1>
+                <h1>App Implementation</h1>
 
                 <p>Midterm prototype code.</p>
 
