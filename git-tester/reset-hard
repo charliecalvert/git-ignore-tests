@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+#docker container stop week04-docker-composer_main_1
+#docker container rm week04-docker-composer_main_1
+
+docker image rm git-tester_main
+docker image rm git-tester_system-environment
+docker image rm git-tester_route-tester
