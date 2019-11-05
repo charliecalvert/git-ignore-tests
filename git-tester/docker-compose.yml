@@ -6,8 +6,9 @@ services:
       - "30025:30025"
     restart: always
     command: npm start
-    links:
-      - route-tester
+    volumes:
+      - ./main/:/usr/src/elf-main
+      - /usr/src/elf-main/node_modules/
   route-tester:
     build: route-tester
     ports:
@@ -16,6 +17,9 @@ services:
     environment:
       - NODE_ENV=production
     command: npm start
+    volumes:
+      - ./route-tester/:/usr/src/route-tester
+      - /usr/src/route-tester/node_modules/
   system-environment:
     build: system-environment
     ports:
@@ -24,3 +28,10 @@ services:
     environment:
       - NODE_ENV=production
     command: npm start
+    volumes:
+      - ./system-environment/bin:/usr/src/system-environment/bin
+      - ./system-environment/public:/usr/src/system-environment/public
+      - ./system-environment/routes:/usr/src/system-environment/routes
+      - ./system-environment/routes:/usr/src/system-environment/views
+      - ./system-environment/app.js:/usr/src/system-environment/app.js
+      - /usr/src/route-tester/node_modules/

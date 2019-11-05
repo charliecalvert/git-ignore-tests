@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npx webpack & node ./bin/www",
+    "start": "npx webpack --watch & nodemon ./bin/www",
     "build": "npx webpack",
     "test": "jest"
   },
@@ -30,6 +30,7 @@
     "@babel/runtime": "^7.6.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "nodemon": "^1.19.4",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
