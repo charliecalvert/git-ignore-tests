@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npx webpack & node ./bin/www",
+    "start": "npx webpack --watch & nodemon ./bin/www",
     "build": "npx webpack",
     "test": "jest"
   },
@@ -15,6 +15,7 @@
     "express": "~4.17.1",
     "http-errors": "~1.7.3",
     "morgan": "~1.9.1",
+    "nodemon": "^1.19.4",
     "prop-types": "^15.7.2",
     "pug": "2.0.4",
     "react": "^16.11.0",
