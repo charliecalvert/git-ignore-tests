@@ -43,9 +43,9 @@ export default class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Main Calvert</h1>
+                <h1>Git Ignore Tests</h1>
 
-                <p>Midterm prototype code.</p>
+                <p>Midterm prototype code with hot reloading in Docker.</p>
 
                 <h2>You Rang</h2>
 
