@@ -1,12 +1,12 @@
 #! /usr/bin/env bash
 
-# cp ~/.ssh/midterm-key system-environment/.
+cp ~/.ssh/midterm-key system-environment/.
 
-if [ ! -d system-environment/git-ignore-tests ]; then
-    cd system-environment
-    git clone git@github.com:charliecalvert/git-ignore-tests.git
-    cd ..
-fi
+#if [ ! -d system-environment/git-ignore-tests ]; then
+#    cd system-environment
+#    git clone git@github.com:charliecalvert/git-ignore-tests.git
+#    cd ..
+#fi
 
 docker-compose up $1
-# rm system-environment/midterm-key
+rm system-environment/midterm-key

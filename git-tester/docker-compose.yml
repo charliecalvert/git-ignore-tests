@@ -30,5 +30,9 @@ services:
       - NODE_ENV=production
     command: npm start
     volumes:
-      - ./system-environment/:/usr/src/system-environment
+      - ./system-environment/bin:/usr/src/system-environment/bin
+      - ./system-environment/public:/usr/src/system-environment/public
+      - ./system-environment/routes:/usr/src/system-environment/routes
+      - ./system-environment/routes:/usr/src/system-environment/views
+      - ./system-environment/app.js:/usr/src/system-environment/app.js
       - /usr/src/system-environment/node_modules/
