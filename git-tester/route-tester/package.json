@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npx webpack --watch & nodemom ./bin/www",
+    "start": "npx webpack --watch & nodemon ./bin/www",
     "build": "npx webpack",
     "test": "jest"
   },
