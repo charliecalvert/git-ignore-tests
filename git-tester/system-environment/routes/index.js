@@ -27,6 +27,7 @@ router.get('/you-rang', function(request, response) {
 
 router.get('/getBranches', function(request, response) {
     debug('Get Branches called');
+    //response.send({result: 'success'});
     getBranches(response).catch(function(e) {
         console.log(e);
     });

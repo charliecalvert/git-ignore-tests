@@ -15,6 +15,8 @@ router.get('/system-environment/you-rang', function(req, res) {
 });
 
 router.get('/system-environment/getBranches', function(req, res) {
+    console.log('GET BRANCHES IN ROUTES/INDEX.JS CALLED');
+    //res.send({result: 'success'});
     requester('http://system-environment:30028/getBranches').pipe(res);
 });
 
